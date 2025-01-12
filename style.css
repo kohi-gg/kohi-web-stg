@@ -1,5 +1,7 @@
 body {
     background-color: #F8EED5;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
 }
 
 header nav, .header-nav {
