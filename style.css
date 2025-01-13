@@ -1,79 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     background-color: #F8EED5;
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
 }
 
-header nav, .header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 10px;
-    gap: 5%;
+/* .hero * {
+    border: 1px solid red;
+} */
+
+.hero img {
+    max-width: 25%;
 }
 
-header img {
-    width: 300px;
+.hero .content {
+    max-width: max-content;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/landscape-placeholder.svg");
-    height: 50%;
+.hero {
+    background-image: url("media/landscape-placeholder.svg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+    padding: 64px;
 }
 
-.hero-text {
-    text-align: center;
-    padding: 10%;
+header * {
+    /* border: 1px solid red; */
+    /* margin: 0 auto; */
 }
 
-
-#logo {
-    max-width: 15%;
+nav {
+    /* border: 5px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2.5%;
 }
 
-.home-main {
+nav img {
+    /* border: 5px solid red; */
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+nav menu {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    /* border: 3px solid orange; */
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav menu li {
+    padding: 16px;
+}
+
+nav .image {
+    /* border: 5px solid blue; */
+    max-width: 50%;
+    padding: 16px 0;
+}
+
+/* Body Content */
+
+.home {
+    border: 1px solid red;
+}
+
+.main {
+    border: 2px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
-.home-main div {
-    padding: 0px 40px 0px 40px;
+.main .image {
+    border: 3px solid orange;
+    height: 270px;
+    width: 480px;
+    background-color: gray;
 }
 
-.home-main img {
-    max-width: 50%;
-}
-
-.home-blog-heading, .home-join {
-    text-align: center;
-    padding: 5% 10%;
-}
-
-.home-blog-recent {
-    display: flex;
-    gap: 2%;
-}
-
-.blog-summary {
-    padding: 5%;
-    background-color: #211405;
-    color: #F8EED5;
-    border-radius: 24px;
-}
-
-footer, .footer-nav {
-    display: flex;
-    padding: 5%;
-    gap: 5%;
-}
-
-.footer-logo {
-    max-width: 200px;
+.main .text {
+    border: 5px solid;
+    width: 50%;
 }
