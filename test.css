@@ -1,0 +1,31 @@
+.main {
+    border: 1px solid;
+    background-color: gray;
+}
+
+.main-flex {
+    border: 2px solid red;
+    background-color: lightblue;
+    padding: 40px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.flex-one, .flex-two {
+    border: 3px solid orange;
+    background: lightcoral;
+    width: 100px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sub-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
