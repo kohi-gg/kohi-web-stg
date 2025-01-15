@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="main">
-        <div class="main-flex sub-flex">
-            <div class="flex-one">a</div>
-            <div class="flex-two sub">
-                <div>i</div>
-                <div>ii</div>
+        <div class="one">
+            <div class="one sub"></div>
+            <div class="one sub">
+                <div class="one child">i</div>
+                <div class="one child">ii</div>
             </div>
         </div>
-        <div class="main-flex">3</div>
+        <div class="two">
+            <div class="two sub">
+                <div class="two parent">A
+                    <div class="two kid">i</div>
+                    <div class="two kid">ii</div>
+                </div>
+                <div class="two other-parent">B
+                    <div class="two kid">iii</div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
