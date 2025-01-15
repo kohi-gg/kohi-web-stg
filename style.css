@@ -59,6 +59,7 @@ nav menu {
     /* border: 3px solid orange; */
     padding: 0;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 nav menu li {
@@ -80,7 +81,7 @@ nav .image {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 60px;
     padding: 10%;
 }
 
@@ -151,7 +152,7 @@ nav .image {
 
 /* Footer */
 
-footer .logo img {
+/* footer .logo img {
     width: 100%;
 }
 
@@ -182,4 +183,107 @@ footer {
 footer .nav {
     display: flex;
     flex-wrap: wrap;
+} */
+
+
+
+/* Footer Test */
+
+footer {
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    /* border: 1px solid blue;
+    background-color: lightgreen; */
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+.footer.logo {
+    /* border: 1px solid orange;
+    background-color: lightcoral; */
+    width: 200px;
+}
+
+.footer.newsletter {
+    /* border: 1px solid purple;
+    background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.newsletter.form input
+ {
+    margin: 10px 0px 0px 0px;
+}
+
+.newsletter.form p {
+    margin-bottom: 10px;
+}
+
+.column.b {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 40px;
+}
+
+.footer.socials menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer.socials img {
+    width: 40px;
+    /* color: #211405;
+    background-color: #211405; */
+}
+
+.footer.logo img {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+}
+
+menu li {
+    list-style-type: none;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.subheading {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.email {
+    width: 300px;
+    flex-shrink: 1;
+}
+
+.cta.primary {
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #c8955c;
+    border: none;
+    font-size: 16px;
 }
