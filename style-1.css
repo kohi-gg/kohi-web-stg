@@ -82,6 +82,7 @@ body {
     align-items: center;
     padding: 16px;
     gap: 16px;
+    background-color: #c8955c;
 }
 
 .nav.logo {
