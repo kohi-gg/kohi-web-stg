@@ -68,14 +68,11 @@ nav menu {
     justify-content: space-evenly;
     list-style: none;
     padding: 0;
+    align-items: center;
 }
 
 nav li {
     padding: 8px;
-}
-
-nav #button {
-    border-radius: 12px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -156,6 +153,10 @@ main .text, main p, main button {
 .blog-item .text h3,
 .blog-item .text p {
     color: #f8eed5;
+}
+
+.blog-item img {
+    border-radius: 12px;
 }
 
 /* For desktop */
@@ -291,6 +292,119 @@ footer a {
     .footer-socials ul {
         display: flex;
         list-style: none;
+    }
+
+}
+
+/* Fonts & Buttons */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab';
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    line-height: normal;
+}
+
+.subheading {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: normal;
+}
+
+.feature {
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: normal;
+}
+
+body {
+    font-family: 'Roboto';
+    letter-spacing: 0em;
+    line-height: 24px;
+}
+
+.cta.secondary, .cta.main {
+    background-color: transparent;
+    padding: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 12px;
+    border: 2px solid #211405;
+    transition-duration: 0.4s;
+}
+
+.cta.secondary:hover {
+    background-color: #211405;
+    color: #f8eed5;
+}
+
+.cta.primary {
+    background-color: transparent;
+    color: #f8eed5;
+    padding: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 12px;
+    border: 2px solid #f8eed5;
+    transition-duration: 0.4s;
+}
+
+.cta.primary:hover, .cta.main:hover {
+    background-color: #c8955c;
+    border: 2px solid #c8955c;
+    color: #211405;
+}
+
+a {
+    text-decoration: none;
+    transition-duration: 0.4s;
+    padding: 12px;
+}
+
+.footer-menu a:hover {
+    color: #c8955c;
+}
+
+.email {
+    padding: 8px;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid #f8eed5;
+    background-color: transparent;
+    color: #f8eed5;
+
+}
+
+nav li {
+    transition-duration: 0.4s;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 48px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    .feature {
+        font-size: 32px;
+    }
+
+    .cta.secondary, .cta.main, .cta.primary, .email {
+        padding: 16px;
+    }
+
+    .email {
+        width: 380px;
     }
 
 }
